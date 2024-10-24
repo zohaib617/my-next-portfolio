@@ -25,3 +25,18 @@ body {
     text-wrap: balance;
   }
 }
+
+.animate-type {
+  animation: type 3s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
