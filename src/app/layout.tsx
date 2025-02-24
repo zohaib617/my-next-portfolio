@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/navbar";
+import AnimatedLayout from "./components/AnimatedLayout";
+
 
 
 const geistSans = localFont({
@@ -29,10 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-        className={` bg-zinc-900   ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` bg-[#482E2E]   ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <Navbar/>
-        {children}
+      <AnimatedLayout>{children}</AnimatedLayout>
       </body>
     </html>
   );
