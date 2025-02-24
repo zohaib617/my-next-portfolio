@@ -25,7 +25,7 @@ const project =[
 
     return(
 <div className='max-w-7xl mx-auto px-6 py-12 flex flex-col justify-center items-center ' > 
-<h1 className=" text-gray-500 text-4xl font-bold text-center mb-8">My Projects</h1>
+<h1 className=" text-gray-500 text-4xl font-sans font-bold text-center mb-8">My Projects</h1>
 <p className='text-center text-gray-300 font-sans font-bold w-full lg:w-[600px] p-6 text-[16px]' >I specialize in creating visually appealing and high-performance websites. Whether you need a modern web design, a functional portfolio, or expert guidance in web development, I’ve got you covered!</p>
    
 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-24 " > 
@@ -33,7 +33,7 @@ const project =[
     {project.map((project,index)=>(
         <div key={index}  className="bg-gray-800 shadow-black shadow-xl rounded-2xl p-6">
             <div className='text-gray-500 flex justify-center items-center' >{project.icon}</div>
-            <h1 className='text-2xl font-sans font-bold text-center p-2 text-[#CA5900]' >{project.title}</h1>
+            <h1 className='text-2xl font-sans font-bold text-center p-2 text-green-500' >{project.title}</h1>
             <p className='text-gray-100 text-center font-bold' >{project.description}</p>
         </div>
     ))}

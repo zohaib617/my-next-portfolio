@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react"
 
  
 export default function Navbar(){
-
+const [showNumber, setShowNumbber]=useState(false)
 const [isOpen, setIsOpen] = useState(false);
   return(
 
@@ -23,6 +23,7 @@ const [isOpen, setIsOpen] = useState(false);
 <div className="hidden md:flex gap-6 " >
 <Link href='/' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans">Home </Link>
 <Link href='/about' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans">About </Link>
+<Link href='/skills' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans"> Skills </Link>
 <Link href='/services' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans"> Services </Link>
 <Link href='/project' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans">Projects </Link>
 <Link href='/contact' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans">Contact </Link>
@@ -31,7 +32,10 @@ const [isOpen, setIsOpen] = useState(false);
 
 
 
-  <button className="  hidden md:block  bg-[#CA5900] py-1 px-2 rounded-md text-[#FED2B0] text-lg font-bold font-sans  hover:text-gray-700 mr-6">Hire me </button>
+  <button className="  hidden md:block  bg-[#CA5900] py-1 px-2 rounded-md text-[#FED2B0] text-lg font-bold font-sans  hover:text-gray-700 mr-6"
+  
+  onClick={() => setShowNumbber((prev)=>!prev)}
+  >{showNumber ? "+923198251617": "Hire Me"} </button>
 
 
 
@@ -55,6 +59,7 @@ const [isOpen, setIsOpen] = useState(false);
     
 <Link href='/' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans hover:bg-gray-700">Home </Link>
 <Link href='/about' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans  hover:bg-gray-700 ">About </Link>
+<Link href='/skills' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans hover:bg-gray-700 "> Skills </Link>
 <Link href='/services' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans hover:bg-gray-700 "> Services </Link>
 <Link href='/project' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans hover:bg-gray-700 ">Projects </Link>
 <Link href='/contact' className="hover:text-[#CA5900] text-[#FED2B0] text-lg font-bold font-sans hover:bg-gray-700 ">Contact </Link>

@@ -12,7 +12,7 @@ export default function AboutPage() {
           <img src="/pic.png" alt="Profile" className="w-full lg:w-[500px] h-auto lg:h-[500px] rounded-lg object-cover" />
         </div>
         <div className="w-full lg:w-2/3">
-          <h2 className="text-3xl font-sans font-bold text-gray-500 mb-12 text-center">About Me</h2>
+          <h2 className="text-4xl font-sans font-bold text-gray-500 mb-12 text-center lg:text-left">About Me</h2>
           <p className="text-gray-400 leading-relaxed">
             I am a passionate web developer skilled in modern technologies including
             <span className="text-[#CA5900]"> HTML, CSS, TypeScript, Tailwind CSS, and Next.js</span>. I specialize in

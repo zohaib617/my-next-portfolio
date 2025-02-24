@@ -29,7 +29,7 @@ const Services = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col justify-center items-center  " >
-      <h1 className=" text-gray-500 text-4xl    font-bold text-center mb-8">My Services</h1>
+      <h1 className=" text-gray-500 text-4xl font-sans   font-bold text-center mb-8">My Services</h1>
       <p className='text-center text-gray-300 font-sans font-bold w-full lg:w-[600px] p-6 text-[16px]' >I specialize in creating visually appealing and high-performance websites. Whether you need a modern web design, a functional portfolio, or expert guidance in web development, I’ve got you covered!</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-24 ">
         {services.map((service, index) => (

@@ -35,7 +35,7 @@ export default function ContactPage() {
 
   return (
     <section className="container mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-center mb-6 text-white">Contact Me</h2>
+      <h2 className="text-4xl font-bold text-center mb-6 font-sans text-gray-500">Contact Me</h2>
       <form 
         onSubmit={handleSubmit} 
         className="flex flex-col space-y-4 max-w-lg mx-auto bg-gray-900 p-8 rounded-lg"
@@ -74,7 +74,7 @@ export default function ContactPage() {
 
         <button 
           type="submit" 
-          className="w-full p-3 font-bold bg-[#CA5900] hover:bg-orange-700 rounded-md transition-colors disabled:opacity-50"
+          className= " shadow-black shadow-xl w-full p-3 font-bold bg-[#CA5900] hover:bg-orange-700 rounded-md transition-colors disabled:opacity-50"
           disabled={isProcessing}
         >
           {isProcessing ? "Processing..." : "Send Message"}
